@@ -166,9 +166,12 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../imagens/mercado2.jpeg) no-repeat;
+    background-image: url(../imagens/mercado2.jpeg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
 }
 
 
