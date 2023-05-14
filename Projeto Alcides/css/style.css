@@ -87,9 +87,10 @@ section{
     z-index: 1000;
 }
 
-h2{
+h3{
     color: #323fb3;
     font-size: 14pt;
+    text-transform: uppercase;
 }
 
 .header .logo img{
@@ -100,6 +101,24 @@ h2{
     margin:0 1rem;
     font-size: 1.6rem;
     color:#fff;
+}
+
+.submenu{
+    padding: 50px;
+    text-align: center;
+}
+
+.submenu a{
+    margin:0 1rem;
+    font-size: 2.0rem;
+    color:#fff;
+    
+}
+
+.submenu a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
 }
 
 .header .navbar a:hover{
@@ -135,29 +154,12 @@ h2{
     transform-origin: top;
 }
 
-.header .search-form.active{
-    transform: scaleY(1);
-}
 
-.header .search-form input{
-    height: 100%;
-    width: 100%;
-    font-size: 1.6rem;
-    color:var(--black);
-    padding:1rem;
-    text-transform: none;
-}
 
-.header .search-form label{
-    cursor: pointer;
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
-    color:var(--black);
-}
 
-.header .search-form label:hover{
-    color:var(--main-color);
-}
+
+
+
 
 .header .cart-items-container{
     position: absolute;
@@ -209,26 +211,26 @@ h2{
 }
 
 .about .row .image{
-    flex:1 1 45rem;
+    flex:1 1 300px;
 }
 
 .about .row .image img{
-    width: 100%;
+    width: 95%;
 }
 .about .row .content{
-    flex:1 1 45rem;
-    padding:2rem;
+    flex:1 1 500px;
+    padding:32px;
 }
 
 .about .row .content h3{
-    font-size: 3rem;
+    font-size: 24pt;
     color:#fff;
 }
 
 .about .row .content p{
-    font-size: 1.6rem;
+    font-size: 12pt;
     color:#ccc;
-    padding:1rem 0;
+    padding:16px 0;
     line-height: 1.8;
 }
 
@@ -273,6 +275,7 @@ h2{
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+
 
 .products .box-container{
     display: grid;
@@ -333,144 +336,53 @@ h2{
     font-size: 1.5rem;
 }
 
-.review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.review .box-container .box{
-    border:var(--border);
-    text-align: center;
-    padding:3rem 2rem;
-}
-
-.review .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:2rem 0;
-}
-
-.review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:#fff;
-}
-
-.review .box-container .box .stars i{
-    font-size: 1.5rem;
-    color:var(--main-color);
-}
-
 .contact .row{
     display: flex;
     background:var(--black);
     flex-wrap: wrap;
-    gap:1rem;
+    gap:16px;
 }
 
 .contact .row .map{
-    flex:1 1 45rem;
+    flex:1 1 400px;
     width: 100%;
     object-fit: cover;
 }
 
 .contact .row form{
-    flex:1 1 45rem;
-    padding:5rem 2rem;
+    flex:1 1 450px;
+    padding:40px 32px;
     text-align: center;
 }
 
 .contact .row form h3{
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 20pt;
     color:#fff;
 }
 
 .contact .row form .inputBox{
     display: flex;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 25px;
+    margin-bottom: 24px;
     background:var(--bg);
     border:var(--border);
 }
 
 .contact .row form .inputBox span{
     color:#fff;
-    font-size: 2rem;
-    padding-left: 2rem;
+    font-size: 20px;
+    padding-left:20px ;
 }
 
 .contact .row form .inputBox input{
     width: 100%;
-    padding:2rem;
-    font-size: 1.7rem;
+    padding:20px;
+    font-size: 20px;
     color:#fff;
     text-transform: none;
     background:none;
-}
-
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.blogs .box-container .box{
-    border:var(--border);    
-}
-
-.blogs .box-container .box .image{
-    height: 25rem;
-    overflow:hidden;
-    width: 100%;
-}
-
-.blogs .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-.blogs .box-container .box:hover .image img{
-    transform: scale(1.2);
-}
-
-.blogs .box-container .box .content{
-    padding:2rem;
-}
-
-.blogs .box-container .box .content .title{
-    font-size: 2.5rem;
-    line-height: 1.5;
-    color:#fff;
-}
-
-.blogs .box-container .box .content .title:hover{
-    color:var(--main-color);
-}
-
-.blogs .box-container .box .content span{
-    color:var(--main-color);
-    display: block;
-    padding-top: 1rem;
-    font-size: 2rem;
-}
-
-.blogs .box-container .box .content p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:1rem 0;
 }
 
 .footer{
@@ -497,35 +409,6 @@ h2{
     background-color: var(--main-color);
 }
 
-.footer .links{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    gap:1rem;
-}
-
-.footer .links a{
-    padding:.7rem 2rem;
-    color:#2b40ff;
-    border:var(--border);
-    font-size: 2rem;
-}
-
-.footer .links a:hover{
-    background:var(--main-color);
-}
-
-.footer .credit{
-    font-size: 2rem;
-    color:#fff;
-    font-weight: lighter;
-    padding:1.5rem;
-}
-
-.footer .credit span{
-    color:var(--main-color);
-}
 
 
 
@@ -536,10 +419,6 @@ h2{
 
 
 
-
-
-
-/* media queries  */
 @media (max-width:991px){
 
     html{
@@ -582,10 +461,7 @@ h2{
         font-size: 2rem;
     }
 
-    .header .search-form{
-        width: 90%;
-        right: 2rem;
-    }
+ 
 
     .home{
         background-position: left;
@@ -610,3 +486,6 @@ h2{
     }
 
 }
+
+
+
