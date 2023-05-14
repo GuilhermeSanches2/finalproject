@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
+
+/* ffdf2b 2b40ff */
+
 :root{
-    --main-color:#ffdf2b;
+    --main-color:#2b40ff;
     --black:#2c2c2c;
     --bg:#161616;
     --border:.1rem solid rgba(255,255,255,.3);
@@ -82,6 +85,11 @@ section{
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
+}
+
+h2{
+    color: #323fb3;
+    font-size: 14pt;
 }
 
 .header .logo img{
@@ -499,7 +507,7 @@ section{
 
 .footer .links a{
     padding:.7rem 2rem;
-    color:#ffdf2b;
+    color:#2b40ff;
     border:var(--border);
     font-size: 2rem;
 }
